@@ -1,0 +1,15 @@
+/_project/*
+/nbproject/*
+.**/
+/upload/*
+upload.php
+/test/*
+#/app/core/config.js
+/node_modules/*
+npm-debug.log
+/app/css/vendor/*
+*.iml
+/.idea
+.**/
+/.history
+sftp-config.json
