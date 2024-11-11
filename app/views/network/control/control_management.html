@@ -8,11 +8,11 @@
             <div class="btn-group">
                 <!-- Classic -->
                 <button type="button" class="btn btn-primary"
-                        ng-class="!controlDh.controller.bleExtMode ? 'active' : ''"
-                        ng-click="setBLEWSExt('controller.data.bleExtMode=false')"
-                        ng-disabled="[1, 2, 3, 4, 5, 6, 7].indexOf(controlDh.controller.controllerState) > -1 || rowSpinner['controller.data.bleExtMode=false']">
+                        ng-class="!controlDh.controller.bleExt ? 'active' : ''"
+                        ng-click="setBLEWSExt('controller.data.bleExt=false')"
+                        ng-disabled="[1, 2, 3, 4, 5, 6, 7].indexOf(controlDh.controller.controllerState) > -1 || rowSpinner['controller.data.bleExt=false']">
                     <bb-row-spinner
-                            spinner="rowSpinner['controller.data.bleExtMode=false']"
+                            spinner="rowSpinner['controller.data.bleExt=false']"
                             label="_t('btn_ble_int_mode')"
                             icon="'fa-brands fa-bluetooth'"
                             core="'far'">
@@ -20,11 +20,11 @@
                 </button>
                 <!-- LongRange -->
                 <button type="button" class="btn btn-primary"
-                        ng-class="controlDh.controller.bleExtMode ? 'active' : ''"
-                        ng-click="setBLEWSExt('controller.data.bleExtMode=true')"
-                        ng-disabled="[1, 2, 3, 4, 5, 6, 7].indexOf(controlDh.controller.controllerState) > -1 || rowSpinner['controller.data.bleExtMode=true']">
+                        ng-class="controlDh.controller.bleExt ? 'active' : ''"
+                        ng-click="setBLEWSExt('controller.data.bleExt=true')"
+                        ng-disabled="[1, 2, 3, 4, 5, 6, 7].indexOf(controlDh.controller.controllerState) > -1 || rowSpinner['controller.data.bleExt=true']">
                     <bb-row-spinner
-                            spinner="rowSpinner['controller.data.bleExtMode=true']"
+                            spinner="rowSpinner['controller.data.bleExt=true']"
                             label="_t('btn_ble_ext_mode')"
                             icon="'fa-regular fa-mobile-signal-out'">
                     </bb-row-spinner>

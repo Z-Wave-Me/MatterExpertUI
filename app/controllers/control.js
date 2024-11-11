@@ -19,7 +19,7 @@ appController.controller('ControlController', function ($scope, $interval, $time
         controller: {},
         limitReached: false,
         inclusion: {
-            bleExtMode: false,
+            bleExt: false,
             lastIncludedDevice: $scope.alert,
             lastExcludedDevice: $scope.alert,
             lastIncludedDeviceId: 0,
@@ -132,7 +132,7 @@ appController.controller('ControlController', function ($scope, $interval, $time
         var nodeId = ZMatterAPIData.controller.data.nodeId.value;
         var hasDevices = Object.keys(ZMatterAPIData.devices).length;
         var controllerState = ZMatterAPIData.controller.data.controllerState.value;
-        var bleExtMode = ZMatterAPIData.controller.data.bleExtMode.value;
+        var bleExt = ZMatterAPIData.controller.data.bleExt.value;
         
         /*
         var manufacturerId = $filter('hasNode')(ZMatterAPIData,'devices.' + nodeId + '.data.radioManufacturer.value');
@@ -147,7 +147,7 @@ appController.controller('ControlController', function ($scope, $interval, $time
         // Default controller settings
         $scope.controlDh.controller.nodeId = nodeId;
         $scope.controlDh.controller.controllerState = controllerState;
-        $scope.controlDh.controller.bleExtMode = bleExtMode;
+        $scope.controlDh.controller.bleExt = bleExt;
 
         $scope.controlDh.inclusion.alert = {
             message: $scope._t('nm_controller_state_' + controllerState),
